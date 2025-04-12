@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.instruction.emploiapp.controller.popup.form.InstructeurFormController"
+      fx:id="root"
+      alignment="CENTER"
+      stylesheets="@../../styles/form.css"
+      styleClass="window"
+      maxWidth="400"
+      maxHeight="380">
+
+    <HBox styleClass="header-bar" alignment="CENTER" HBox.hgrow="ALWAYS">
+        <Label fx:id="headerTitle" styleClass="header-title" />
+    </HBox>
+
+    <VBox spacing="10" alignment="CENTER_LEFT" styleClass="contenu">
+
+        <HBox styleClass="icon-text-hbox" spacing="10" alignment="CENTER_LEFT">
+            <ImageView fitWidth="24" fitHeight="24">
+                <Image url="@../../images/name.png"/>
+            </ImageView>
+            <TextField fx:id="nomField" promptText="Nom" styleClass="rounded-text-field" prefWidth="300"/>
+        </HBox>
+
+        <HBox styleClass="icon-text-hbox" spacing="10" alignment="CENTER_LEFT">
+            <ImageView fitWidth="24" fitHeight="24">
+                <Image url="@../../images/grade.png"/>
+            </ImageView>
+            <TextField fx:id="gradeField" promptText="Grade" styleClass="rounded-text-field" prefWidth="300"/>
+        </HBox>
+
+        <HBox styleClass="icon-text-hbox" spacing="10" alignment="CENTER_LEFT">
+            <ImageView fitWidth="24" fitHeight="24">
+                <Image url="@../../images/book.png"/>
+            </ImageView>
+            <ComboBox fx:id="matiereCombo" promptText="Matière" styleClass="rounded-combo-box" prefWidth="300"/>
+        </HBox>
+
+        <HBox styleClass="icon-text-hbox" spacing="10" alignment="CENTER_LEFT">
+            <ImageView fitWidth="24" fitHeight="24">
+                <Image url="@../../images/cies.png"/>
+            </ImageView>
+            <TextField fx:id="idCieField" promptText="Compagnie(s)" styleClass="rounded-text-field" prefWidth="300"/>
+        </HBox>
+
+        <Label fx:id="errorLabel" styleClass="label-error" visible="false"/>
+
+        <HBox alignment="CENTER" spacing="20">
+            <Button fx:id="btnSave" text="Enregistrer" styleClass="button-enregistrer"/>
+            <Button fx:id="btnCancel" text="Annuler" styleClass="button-annuler"/>
+        </HBox>
+
+    </VBox>
+</VBox>

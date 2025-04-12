@@ -1,0 +1,93 @@
+.side-menu {
+    -fx-background-color: #6D8972;
+    -fx-padding: 10;
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-font-family: "JF Flat";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-graphic-text-gap: 10;
+    -fx-cursor: hand;
+    -fx-padding: 8 10;
+    -fx-background-radius: 5;
+    -fx-alignment: CENTER_LEFT;
+    -fx-pref-width: 180;
+    -fx-pref-height: 48;
+    -fx-max-width: Infinity;
+}
+
+.menu-button:hover, .menu-button.active:hover {
+    -fx-background-color: #FFFFFF33;
+    -fx-text-fill: #fff;
+}
+
+.menu-button:pressed, .menu-button.active {
+    -fx-background-color: #FFFFFF4C;
+    -fx-text-fill: #000;
+}
+
+.toggle-button {
+    -fx-font-size: 12px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-cursor: hand;
+    -fx-padding: 5;
+}
+
+.menu-button .text {
+    -fx-opacity: 1;
+}
+
+.side-menu.collapsed {
+    -fx-pref-width: 40;
+}
+
+.side-menu.collapsed .menu-button .text {
+    -fx-opacity: 0;
+}
+
+.side-menu.collapsed .menu-button {
+    -fx-graphic-text-gap: -5;
+}
+
+.tooltip-custom {
+    -fx-alignment: center;
+    -fx-background-color: #6D8972;
+    -fx-border-color: black;
+    -fx-font-weight: bold;
+    -fx-font-family: "JF Flat";
+    -fx-text-fill: #fff;
+    -fx-padding: 8 12;
+    -fx-background-radius: 8;
+    -fx-pref-width: 100;
+    -fx-pref-height: 20;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 6, 0, 0, 2);
+}
+
+.window-controls {
+    -fx-background-color: #F9FBFF;
+    -fx-pref-height: 20;
+    -fx-padding: 0 15 0 0;
+}
+
+.window-button-minimize,
+.window-button-close {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+    -fx-cursor: hand;
+    -fx-padding: 4;
+}
+
+.window-button-close:hover {
+    -fx-text-fill: #c0392b;
+}
+
+.window-button-minimize:hover{
+    -fx-text-fill: #AAB99A;
+}

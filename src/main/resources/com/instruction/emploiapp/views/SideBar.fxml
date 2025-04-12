@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.layout.HBox?>
+<StackPane xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.instruction.emploiapp.controller.SideBarController"
+           stylesheets="@../styles/SideBar.css">
+
+    <BorderPane>
+
+        <left>
+            <VBox fx:id="sideMenu" spacing="15" styleClass="side-menu" prefWidth="180">
+
+                <StackPane prefHeight="30" prefWidth="180">
+                    <Button fx:id="toggleButton"
+                            text="✖"
+                            styleClass="toggle-button"
+                            StackPane.alignment="TOP_RIGHT"
+                            onAction="#toggleSidebar"/>
+                </StackPane>
+                <Region prefHeight="10"/>
+
+                <Button fx:id="home" text="Accueil" onAction="#loadHome" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/home.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="settings" text="Paramètres" onAction="#loadParametres" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/settings.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="subject" text="Matières" onAction="#loadMatieres" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/matiere.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="teacher" text="Instructeurs" onAction="#loadInstructeurs" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/instructeur.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="suivi" text="Suivi" onAction="#loadSuivi" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/suivi.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="generateur" text="Générateur" onAction="#loadEmploiDuTemps" styleClass="menu-button" maxWidth="Infinity" prefWidth="180">
+                    <graphic>
+                        <ImageView fitWidth="24" fitHeight="24" preserveRatio="true">
+                            <Image url="@../images/emploi.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+            </VBox>
+        </left>
+
+        <center>
+            <VBox fx:id="pageCenter">
+                <HBox alignment="CENTER_RIGHT" spacing="10" prefHeight="20" styleClass="window-controls">
+                    <Button fx:id="minimizeButton" text="➖" onAction="#minimizeWindow" styleClass="window-button-minimize"/>
+                    <Button fx:id="closeButton" text="✖" onAction="#closeWindow" styleClass="window-button-close"/>
+                </HBox>
+
+                <AnchorPane fx:id="contentPane" VBox.vgrow="ALWAYS"/>
+            </VBox>
+        </center>
+
+    </BorderPane>
+</StackPane>

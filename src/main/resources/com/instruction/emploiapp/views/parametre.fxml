@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.instruction.emploiapp.controller.ParametreController"
+      stylesheets="@../styles/parametres.css"
+      spacing="10"
+      fx:id="root"
+      styleClass="root">
+
+    <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+        <Label text="Paramètres" styleClass="header-label"/>
+    </HBox>
+
+    <StackPane VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER" spacing="20" styleClass="forme" maxWidth="300">
+            <Label text="Nombre total de compagnies : " styleClass="label-name"/>
+            <TextField fx:id="nbCompagniesField" promptText="Nombre total de compagnies" styleClass="text-field" prefWidth="300"/>
+
+            <Label text="Nombre de compagnies non disponibles : " styleClass="label-name"/>
+            <TextField fx:id="indispoField" promptText="Nombre de compagnies non disponibles" styleClass="text-field" prefWidth="300"/>
+
+            <Label text="Période : " styleClass="label-name"/>
+            <ComboBox fx:id="periode" promptText="Période" styleClass="rounded-combo-box" prefWidth="300">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="FCB"/>
+                        <String fx:value="Spécifique"/>
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <Label fx:id="errorLabel" styleClass="label-error" visible="false"/>
+            <Button onAction="#sauvegarderParametres" text="Sauvegarder" styleClass="button"/>
+        </VBox>
+    </StackPane>
+</VBox>

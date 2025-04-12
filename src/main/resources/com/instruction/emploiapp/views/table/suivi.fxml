@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="10"
+      fx:controller="com.instruction.emploiapp.controller.table.SuiviController"
+      stylesheets="@../../styles/table.css" styleClass="root">
+
+    <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+        <Label text="Suivi Du Volume Horaire Restant Pour Chaque Compagnie" styleClass="header-label"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button styleClass="icon-button" fx:id="btnImport">
+            <graphic>
+                <ImageView fitWidth="25" fitHeight="25" pickOnBounds="true">
+                    <Image url="@../../images/import.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button styleClass="icon-button-add" fx:id="btnAjouter">
+            <graphic>
+                <ImageView fitWidth="25" fitHeight="25" pickOnBounds="true">
+                    <Image url="@../../images/add.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+
+    <TableView fx:id="tableView" prefHeight="720" styleClass="custom-table">
+        <columns>
+            <TableColumn fx:id="idCieColumn" prefWidth="100" text="Compagnie" />
+            <TableColumn fx:id="matiereColumn" prefWidth="200" text="Matiere" />
+            <TableColumn fx:id="volumeHoraireColumn" prefWidth="150" text="Volume Horaire" />
+        </columns>
+    </TableView>
+
+    <HBox alignment="CENTER_LEFT" spacing="5">
+        <Button fx:id="btnFilter" styleClass="icon-button">
+            <graphic>
+                <ImageView fitWidth="20" fitHeight="20">
+                    <Image url="@../../images/filter.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button fx:id="btnClearFilter" styleClass="icon-button">
+            <graphic>
+                <ImageView fitWidth="20" fitHeight="20">
+                    <Image url="@../../images/clear.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <Label fx:id="lblCount" styleClass="count"/>
+    </HBox>
+
+</VBox>

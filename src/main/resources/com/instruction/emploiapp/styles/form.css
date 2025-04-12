@@ -1,0 +1,208 @@
+.window{
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius:20 ;
+    -fx-spacing: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #ffffff;
+}
+
+.contenu{
+    -fx-padding: 20;
+}
+
+.header-bar {
+    -fx-background-color: #AAB99A;
+    -fx-background-radius: 19 19 0 0;
+    -fx-border-radius: 19 19 0 0;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.icon-text-hbox {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 10;
+}
+
+.rounded-text-field {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #000000;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 8;
+}
+
+.rounded-combo-box {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #000000;
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 6;
+}
+
+.rounded-combo-box:hover, .rounded-text-field:hover {
+    -fx-border-color: #D0DDD0;
+}
+
+.rounded-combo-box:focused, .rounded-text-field:focused {
+    -fx-border-color: #727D73;
+    -fx-background-color: #fcfaff;
+}
+
+.button-enregistrer {
+    -fx-background-color: #4CAF50;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 10 20;
+}
+
+.button-annuler {
+    -fx-background-color: #F44336;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 10 20;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+
+.error-field {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color: #FFF0F0;
+}
+
+.label-error {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+.combo-box, .combo-box-base {
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.combo-box:showing, .combo-box:showing .arrow-button {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.combo-box:showing {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-background-color: #727D73;
+    -fx-font-weight: bold;
+    -fx-wrap-text: true;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-border-color: #727D73;
+    -fx-border-width: 1px;
+    -fx-background-color: #FFFFFF;
+    -fx-font-weight: normal;
+    -fx-wrap-text: true;
+    -fx-pref-width: -1;
+}
+
+.combo-box:showing .list-cell{
+    -fx-text-fill: white;
+}
+
+.combo-box:showing .list-view .list-cell{
+    -fx-text-fill: #454444;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-padding: 6 10;
+    -fx-font-size: 12;
+}
+
+.combo-box .list-view {
+    -fx-pref-width: 300;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #000;
+}
+
+.combo-box-popup .list-cell:filled:selected{
+    -fx-background-color: #AAB99A;
+    -fx-text-fill: #191818;
+    -fx-font-weight: bold;
+}
+
+.combo-box-popup .list-cell:filled:selected:hover{
+    -fx-background-color: #D0DDD0;
+    -fx-text-fill: #fff;
+}
+
+.combo-box .arrow {
+    -fx-rotate: 0;
+    -fx-transition: -fx-rotate 0.2s ease-in-out;
+}
+
+.combo-box:showing .arrow {
+    -fx-rotate: 180;
+    -fx-background-color: white;
+}
+
+.combo-box-popup .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.combo-box-popup .scroll-bar:vertical .increment-button,
+.combo-box-popup .scroll-bar:vertical .decrement-button {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-opacity: 0;
+}
+
+.combo-box-popup .scroll-bar:vertical .increment-arrow,
+.combo-box-popup .scroll-bar:vertical .decrement-arrow {
+    -fx-shape: null;
+    -fx-opacity: 0;
+}
+
+.combo-box-popup .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.combo-box-popup .scroll-bar:vertical .thumb {
+    -fx-background-color: #6D8972;
+    -fx-background-radius: 3;
+}
+
+.combo-box-popup .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #aaa;
+}
+
+
+

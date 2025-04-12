@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.instruction.emploiapp.controller.popup.toast.ToastController"
+      fx:id="root"
+      spacing="10"
+      stylesheets="@../../styles/toast.css"
+      styleClass="toast-root">
+
+    <ImageView fx:id="iconImage" fitWidth="32" fitHeight="32" />
+
+    <VBox spacing="4">
+        <Label fx:id="titleLabel" styleClass="toast-title" />
+        <Label fx:id="messageLabel" styleClass="toast-message" wrapText="true" />
+    </VBox>
+
+    <Region HBox.hgrow="ALWAYS" />
+
+    <Button fx:id="closeBtn" text="X" styleClass="toast-close-btn" />
+</HBox>

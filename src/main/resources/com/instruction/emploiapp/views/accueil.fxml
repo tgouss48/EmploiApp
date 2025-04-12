@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<StackPane fx:id="root"
+           xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           styleClass="root"
+           stylesheets="@../styles/accueil.css"
+           fx:controller="com.instruction.emploiapp.controller.AccueilController">
+
+    <ImageView fx:id="backgroundImage">
+        <Image url="@../images/accueil.jpg"/>
+    </ImageView>
+
+    <AnchorPane StackPane.alignment="BOTTOM_RIGHT"
+                pickOnBounds="false"
+                prefHeight="0" prefWidth="0">
+
+        <Button text="Reset FCB"
+                styleClass="reset-button"
+                onAction="#ResetFCB"
+                AnchorPane.bottomAnchor="20"
+                AnchorPane.rightAnchor="140"/>
+
+        <Button text="Réinitialiser"
+                styleClass="reset-button"
+                onAction="#ResetAll"
+                AnchorPane.bottomAnchor="20"
+                AnchorPane.rightAnchor="20"/>
+    </AnchorPane>
+
+    <AnchorPane StackPane.alignment="BOTTOM_LEFT"
+                pickOnBounds="false"
+                prefHeight="0" prefWidth="0">
+
+        <Label text="Programmé par : TAGA Oussama"
+               styleClass="label"
+               AnchorPane.leftAnchor="15"
+               AnchorPane.bottomAnchor="10"/>
+    </AnchorPane>
+
+</StackPane>

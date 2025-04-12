@@ -1,0 +1,30 @@
+.root {
+    -fx-background-color: #F9FBFF;
+}
+
+.reset-button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+
+.label {
+    -fx-font-family: "JF Flat";
+    -fx-font-size: 14;
+    -fx-text-fill: #000;
+    -fx-opacity: 0.7;
+    -fx-font-style: italic;
+    -fx-padding: 0 0 10 10;
+}

@@ -1,0 +1,29 @@
+.context-menu {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 3);
+    -fx-padding: 4;
+}
+
+.menu-item {
+    -fx-text-fill: #666666;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "JF Flat";
+    -fx-padding: 6 12;
+    -fx-background-color: transparent;
+    -fx-graphic-text-gap: 15;
+}
+
+.menu-item:hover {
+    -fx-background-color: #00ADF1;
+}
+
+.menu-item:disabled {
+    -fx-opacity: 0.5;
+}
+
+.menu-item:selected,
+.menu-item:focused {
+    -fx-background-color: #027bb1;
+}

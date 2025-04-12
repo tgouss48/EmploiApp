@@ -1,0 +1,100 @@
+.root {
+    -fx-background-color: #F9FBFF;
+    -fx-padding: 5 15 15 15;
+}
+
+.forme{
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
+
+.header {
+    -fx-background-color: linear-gradient(to right, #6D8972, #D9DDBC);
+    -fx-background-radius: 15px;
+    -fx-padding: 15px;
+}
+
+.header-label {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-padding: 10 20;
+}
+
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-radius: 100;
+    -fx-padding: 5;
+    -fx-background-radius: 100;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-opacity: 0.9;
+}
+
+.button:pressed {
+    -fx-opacity: 0.7;
+}
+
+.progress-custom {
+    -fx-accent: #6f7a71;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-padding: 0;
+    -fx-background-insets: 0;
+    -fx-pref-height: 30;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #c3d5c3;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+}
+
+.progress-bar > .bar {
+    -fx-background-color: #6f7a71;
+    -fx-background-radius: 20;
+    -fx-background-insets: 0;
+}
+
+.progress-label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.error-field {
+    -fx-border-color: red;
+    -fx-border-width: 2px;
+    -fx-border-radius: 100;
+    -fx-background-radius: 100;
+    -fx-cursor: hand;
+    -fx-padding: 5;
+    -fx-background-color: #FFF0F0;
+}
+
+.label-error {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+.label-path {
+    -fx-text-fill: #178311;
+    -fx-font-weight: bold;
+}

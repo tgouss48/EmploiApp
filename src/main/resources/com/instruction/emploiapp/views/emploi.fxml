@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.instruction.emploiapp.controller.EmploiController"
+      stylesheets="@../styles/emploi.css"
+      styleClass="root">
+
+    <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header">
+        <Label text="Générateur d'Emploi du Temps" styleClass="header-label"/>
+    </HBox>
+
+    <StackPane VBox.vgrow="ALWAYS">
+        <VBox alignment="CENTER" spacing="20" styleClass="forme" maxWidth="400">
+
+            <ImageView fitHeight="120" fitWidth="120">
+                    <Image url="@../images/img.png"/>
+            </ImageView>
+
+            <HBox alignment="CENTER" spacing="5">
+                <StackPane>
+                    <ProgressBar fx:id="progressBar" prefWidth="350" progress="0.0" styleClass="progress-custom"/>
+                    <Label fx:id="progressLabel" text="0%" styleClass="progress-label"/>
+                </StackPane>
+
+                <Button fx:id="btnSave" onAction="#choisirChemin" styleClass="icon-button">
+                    <graphic>
+                        <ImageView fitWidth="18" fitHeight="18" preserveRatio="true">
+                            <Image url="@../images/save.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+
+            <Label fx:id="errorLabel" text="Veuillez sélectionner un dossier de sauvegarde" styleClass="label-error" visible="false"/>
+
+            <Button text="Générer" onAction="#generer" styleClass="button"/>
+        </VBox>
+    </StackPane>
+
+</VBox>

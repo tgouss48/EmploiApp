@@ -1,0 +1,31 @@
+.toast-root {
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10 20;
+    -fx-spacing: 10;
+    -fx-background-radius: 8;
+    -fx-border-color: #1e1e1e;
+    -fx-border-radius: 8;
+}
+
+.toast-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.toast-message {
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+.toast-close-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+#iconImage {
+    -fx-translate-y: 0;
+    -fx-alignment: center;
+}
