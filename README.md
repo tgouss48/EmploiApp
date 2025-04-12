@@ -53,4 +53,3 @@ Le tout avec une **interface utilisateur moderne** et ergonomique.
 <img src="screenshots/Capture%208.png" width="600"/>
 <img src="screenshots/Capture%209.png" width="600"/>
 <img src="screenshots/Capture%2010.png" width="600"/>
-<img src="screenshots/Capture%2011.png" width="600"/>
